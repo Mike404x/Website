@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="bg">
+<meta charset=utf-8>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерия</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/c2cc11dfc2.js"></script>
+            
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="nlink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                    <li><a href="Course.html">Специалности</a></li>
+                    <li><a href="Gallery.html">Галерия</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Галерия от подбрани места</h1>
+    </section>
+
+<!-- gallery page content-->
+<section class="gallery">
+    <div class="row">
+        <div class="column">
+            <img src="images/tru_eagle.jpg" alt="Eagle">
+        </div>
+        <div class="column">
+            <img src="images/tru_front.jpg" alt="Front">
+        </div>
+        <div class="column">
+            <img src="images/tru_zala.jpg" alt="Zala">
+        </div>
+        <div class="column">
+            <img src="images/tru_people.jpg" alt="People">
+        </div>
+    </div>
+</section>
+
+<!---Footer-->
+    <section class="footer">
+        <h2><b>Контакти:</b></h2>
+
+        <h3><b>Адрес:</b><br>6000 Стара Загора Студентски град</h3>
+        <p></p>
+        <h3><b>Email:</b><br>
+            rector@trakia-uni.bg</h3>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-google"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Създаден от Михаил Христов</p>
+    </section>
+<!--- javascript code from here---> 
+    <script>
+        const navlinks = document.getElementById("nlink");
+
+        function showMenu()
+        {
+            navlinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navlinks.style.right="-200px";
+        }
+
+    </script>
+</body>
+</html>

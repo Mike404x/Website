@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=utf-8>
+    <title>Тракийски Университет</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/c2cc11dfc2.js"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                    <li><a href="Course.html">Специалности</a></li>
+                    <li><a href="Gallery.html">Галерия</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="textbox">
+        <h1>Предлагаме едни от най-добрите обучения</h1>
+        <h2>Кандидаствай сега</h2>
+        <p> </p>
+        <a href="" class="hero-btn">Научи Повече</a>
+    </div>
+    </section>
+    <!------- course --------->
+    <section class="course">
+        <h1>Специалности</h1>
+        <p1>Три от най-популярните ни специалности</p1>
+        <div class="row">
+            <div class="course-col">
+                <h3>Софтуерно инженерство </h3>
+                <p>Завършилите студенти ще могат да се реализират в областта на IT сектора, ще бъдат конкурентни на световния пазар на труда.</p>
+            </div>
+            <div class="course-col">
+                <h3>Информационни технологии</h3>
+                <p>Завършилите студенти ще могат да се реализират в областта на IT сектора, ще бъдат конкурентни на световния пазар на труда.</p>
+            </div>
+            <div class="course-col">
+                <h3>Бизнес икономика</h3>
+                <p>Дипломираните специалисти могат да се реализират като: мениджъри, бизнес-експерти и анализатори в частни и публични бизнес организации; консултанти в областта на бизнес планирането и прогнозирането, управлението на риска и още много.</p>
+            </div>
+        </div>
+    </section>
+
+<!----Facitilites----------------->
+<section class="facilities">
+    <h1>Акценти</h1>
+    <div class="row">
+        <div class="fac-col">
+            <img src="images/library.jpg" alt="">
+            <h3>Академичен информационен център</h3>
+        </div>
+        <div class="fac-col">
+            <img src="images/basketball.jpg" alt="">
+            <h3>Спортна Зала Академика</h3>
+        </div>
+        <div class="fac-col">
+            <img src="images/cafeteria.jpg" alt="">
+            <h3>Кафене Академика</h3>
+        </div>
+    </div>
+</section>
+ <!---Footer-->
+ <section class="footer">
+     <h2><b>Контакти:</b></h2>
+
+     <h3><b>Адрес:</b><br>6000 Стара Загора Студентски град</h3>
+     <p></p>
+     <h3><b>Email:</b><br>
+         rector@trakia-uni.bg</h3>
+     <div class="icons">
+     <i class="fa fa-facebook"></i>
+     <i class="fa fa-google"></i>
+     <i class="fa fa-instagram"></i>
+     <i class="fa fa-linkedin"></i>
+     </div>
+     <p>Създаден от Михаил Христов</p>
+     </section>
+
+    <!--- javascript code from here---> 
+    <script>
+        const navlinks = document.getElementById("navlinks");
+
+        function showMenu()
+        {
+            navlinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navlinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
